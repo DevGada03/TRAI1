@@ -1,5 +1,4 @@
 import sys
-import time
 import webbrowser
 import uvicorn
 from api.app import app
@@ -10,15 +9,15 @@ def main():
     url = f"http://{host}:{port}"
 
     print("=" * 68)
-    print("  🏥  PrivateMed: Differentially Private Clinical Model Training")
+    print("  [+] PrivateMed: Differentially Private Clinical Model Training")
     print("=" * 68)
     print(f"  [+] Status      : Engine Initialized & RUNNING")
     print(f"  [+] Dashboard   : {url}")
-    print(f"  [+] Framework   : FastAPI · PyTorch · Opacus DP-SGD · Chart.js")
-    print(f"  [+] Accounting  : Rényi Differential Privacy (RDP) & Laplace")
+    print(f"  [+] Framework   : FastAPI | PyTorch | Opacus DP-SGD | Chart.js")
+    print(f"  [+] Accounting  : Renyi Differential Privacy (RDP) & Laplace")
     print("=" * 68)
-    print(f"\n  👉  Open your browser and navigate to: {url}")
-    print("  👉  Press CTRL + C in this terminal to shut down the server.\n")
+    print(f"\n  >> Open your browser and navigate to: {url}")
+    print("  >> Press CTRL + C in this terminal to shut down the server.\n")
 
     # Launch browser automatically
     try:
